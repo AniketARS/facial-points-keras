@@ -1,3 +1,7 @@
 /data
 /.idea
 /__pycache__
+.DS_Store
+/summary_model_weights/*
+/converted_model/*
+/saved_models/*
