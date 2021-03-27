@@ -5,3 +5,4 @@
 /summary_model_weights/*
 /converted_model/*
 /saved_models/*
+models/__pycache__
