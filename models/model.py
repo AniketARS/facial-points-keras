@@ -33,6 +33,7 @@ def load_latest_model(models):
 def get_model():
     parent_dir = os.path.dirname(os.path.dirname(__file__))
     models = os.listdir(path=os.path.join(parent_dir, 'saved_models'))
+    models = [model for model in models if str(model).find('model') > 0]
     if len(models) > 0:
         model = load_latest_model(models)
     else:
