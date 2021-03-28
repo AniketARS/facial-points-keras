@@ -17,7 +17,7 @@ def images_ds_processor(image, data_path, new_shape):
 
 def key_pts_processor(key_pts, shape, new_shape):
     key_pts = key_pts * tf.convert_to_tensor([new_shape[1]/shape[1], new_shape[0]/shape[0]])
-    key_pts = tf.reshape(key_pts, shape=(-1, 1))
+    key_pts = tf.reshape(key_pts, shape=(1, -1))
     key_pts = key_pts / new_shape[0]
     return key_pts
 
